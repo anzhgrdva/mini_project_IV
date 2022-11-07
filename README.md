@@ -29,7 +29,8 @@ Model deployment
 
 ## Results/Demo
 The model was built using logistci regression. The model accuracy score was 78%.
-
+![plot](images/result.png)
+![plot](images/result2.png)
 ## Challanges 
 Difficulty with deploying to AWS. Using pipeline with multiple different classifiers was also challenging, as it started to get disorganized with a few different pipelines, parameter grids, and grid searches.
 

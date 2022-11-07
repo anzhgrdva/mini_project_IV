@@ -14,11 +14,11 @@ def preprocess(df):
     # Log of loan amount
     df['LoanAmountLog'] = np.log(df['LoanAmount'].astype('float64')) 
     # Total income and log of total income
-    df['Total_Income'] = df['ApplicantIncome'] + df['CoapplicantIncome']
-    df['Total_Income_log'] = np.log(df['Total_Income'].astype('float64'))
+    df['TotalIncome'] = df['ApplicantIncome'] + df['CoapplicantIncome']
+    df['TotalIncomeLog'] = np.log(df['TotalIncome'].astype('float64'))
 
     # Drop the original features
-    cols = ['ApplicantIncome', 'CoapplicantIncome', 'LoanAmount']
+    cols = ['ApplicantIncome', 'CoapplicantIncome', 'LoanAmount', 'TotalIncome']
     df = df.drop(columns=cols)
 
     return df
